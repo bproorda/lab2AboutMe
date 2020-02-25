@@ -1,0 +1,60 @@
+header {
+    height: 70px;
+    background-image: linear-gradient(to bottom, blue, white);
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    border-bottom: 3px solid black;
+}
+body {
+    background-image: url(https://cdn.pixabay.com/photo/2017/11/19/20/45/tree-2963800_960_720.jpg);
+}
+h1 {
+    font-size: 30px;
+    position: relative;
+    bottom: -10px;
+    font-family: cursive;
+}
+
+ul a {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px;
+    background-image: radial-gradient(rgb(124, 185, 206), rgb(7, 7, 80));
+    border-radius: 20px;
+}
+
+nav ul li {
+    display: inline;
+    float: right;
+    position: relative;
+    top: -10px;
+}
+.bio {
+    background-color: gray;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 20px; 
+    width: 75%;
+}
+.bio h2 {
+    font-weight: bolder;
+    font-size: 20px;
+}
+main ul {
+    margin-top: 100px;
+}
+
+
+footer {
+    clear: both;
+    height: 30px;
+    background-image: linear-gradient(to top, blue, white);
+    padding: 10px;
+    position: fixed;
+    bottom: -5px;
+    width: 100%;
+    border-top: 3px solid black;
+}
