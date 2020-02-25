@@ -68,7 +68,7 @@ aside {
     border-radius: 20px;
     width: 15%;
     position: relative;
-    top: -700px;
+    top: -600px;
     padding: 20px;
     z-index: 1;
 }
@@ -78,4 +78,7 @@ aside li {
 aside h2 {
     font-weight: bolder;
     font-size: 20px;
+}
+#recent {
+    text-decoration: underline;
 }

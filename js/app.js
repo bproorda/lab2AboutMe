@@ -3,9 +3,9 @@
 console.log('This is working!');
 
 //Greeting
-// var name = prompt("what is your name?");
-// alert("Hello, " + name + ". Welcome to my site!");
-// console.log(name);
+var name = prompt("what is your name?");
+alert("Hello, " + name + ". Welcome to my site!");
+console.log(name);
 
 //Quiz
 function Quiz() { 
@@ -97,7 +97,17 @@ if (lans5 === "n") {
     alert("What?");
 }
 console.log(points);
-alert("You got " + points +" points!");
+
+var response 
+if (points === 5) {
+    response = " Congrats!"
+} else if (points < 5 && points > 2) {
+    response = " Not too shabby!"
+} else {
+    response = " ouch."
+}
+
+alert("You got " + points +" points!" +response);
 
 }
 
