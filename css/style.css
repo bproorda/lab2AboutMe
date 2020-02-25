@@ -6,6 +6,7 @@ header {
     width: 100%;
     top: 0;
     border-bottom: 3px solid black;
+    z-index: 2;
 }
 body {
     background-image: url(https://cdn.pixabay.com/photo/2017/11/19/20/45/tree-2963800_960_720.jpg);
@@ -24,6 +25,7 @@ ul a {
     margin: 5px;
     background-image: radial-gradient(rgb(124, 185, 206), rgb(7, 7, 80));
     border-radius: 20px;
+    border: 2px solid black;
 }
 
 nav ul li {
@@ -35,6 +37,7 @@ nav ul li {
 .bio {
     background-color: gray;
     border-radius: 20px;
+    border: 2px solid black;
     padding: 10px;
     margin: 20px; 
     width: 75%;
@@ -57,4 +60,22 @@ footer {
     bottom: -5px;
     width: 100%;
     border-top: 3px solid black;
+}
+aside {
+    background-color: chocolate;
+    float: right;
+    border: 2px solid black;
+    border-radius: 20px;
+    width: 15%;
+    position: relative;
+    top: -700px;
+    padding: 20px;
+    z-index: 1;
+}
+aside li {
+    margin: 0 auto;
+}
+aside h2 {
+    font-weight: bolder;
+    font-size: 20px;
 }
