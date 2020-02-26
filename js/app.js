@@ -2,10 +2,18 @@
 //Do First
 console.log('This is working!');
 
+//should wait for page to load before running greeting, I think its working...
+window.onload = (event) => {
+    greeting();
+};
+
 //Greeting
+function greeting() {
 var name = prompt("what is your name?");
 alert("Hello, " + name + ". Welcome to my site!");
 console.log(name);
+}
+
 
 //Quiz
 function Quiz() { 
