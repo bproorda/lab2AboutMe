@@ -4,7 +4,7 @@ console.log('This is working!');
 
 //should wait for page to load before running greeting, I think its working...
 window.onload = (event) => {
-    // greeting();
+    greeting();
 };
 
 //Greeting
