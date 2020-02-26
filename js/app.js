@@ -17,109 +17,40 @@ console.log(name);
 
 //Quiz
 function Quiz() { 
-// alert("Welcome to my About Me quiz! Please answer questions with y or n");
+alert("Welcome to my About Me quiz! Please answer questions with y or n");
 var points = 0
 
-// //question 1
-// var ans1 = prompt("Was I born in Boston?");
-// console.log(ans1);
-// var lans1 = ans1.toLowerCase();
-// console.log(lans1)
-// if (lans1 === "n") {
-//     console.log("Visitor is correct")
-//     alert("That is Correct! Good Job!");
-//     points++
-// } else if (lans1 ==="y") {
-//     alert("Nope! Nice try though.");
-//     console.log("Visitor is incorrect")
-// } else {
-//     alert("Invalid Answer Detected!");
-//     console.log("Visitor is incorrect")
-// }
+//quiz in array form
+var quesArray = ['Was I born in Boston?', 'Do I have two Dogs?', 'Do I drive a Dodge Demon?', 'Is my favorite novel genre fantasy/sci-fi?', 'Do I have a complete pair of lungs'];
+var quizAns = ['n', 'y', 'n', 'y', 'n'];
+var correctRes = ['That is Correct! Good Job!', 'That is Correct! For now...', 'That is Correct...sadly...', 'That is Correct! Maud\'dib is pleased', 'That is Correct! ...don\'t ask'];
+var wrongAns = ['Nope! Nice try though.', 'Nope! Though I would not mind a third one...', 'I wish...', 'Nope! Gandalf is not happy', 'Nope! if only...'];
+var elseAns = ['Invalid Answer Detected!', 'Invalid Answer Detected!', 'Invalid Answer Detected!', 'Invalid Answer Detected!', 'Invalid Answer Detected!'];
+var quizArray = [quesArray, quizAns, correctRes, wrongAns, elseAns];
+var j = 0;
 
-// //question 2
-// var ans2 = prompt("Do I have two Dogs?");
-// console.log(ans2);
-// var lans2 = ans2.toLowerCase();
-// console.log(lans2)
-// if (lans2 === "y") {
-//     console.log("Visitor is correct")
-//     alert("That is Correct! For now...");
-//     points++
-// } else if (lans2 ==="n") {
-//     console.log("Visitor is incorrect")
-//     alert("Nope! Though I would not mind a third one...");
-// } else {
-//     console.log("Visitor is incorrect")
-//     alert("Invalid Answer Detected!");
-// }
-
-// //question 3
-// var ans3 = prompt("Do I drive a Dodge Demon?");
-// console.log(ans3);
-// var lans3 = ans3.toLowerCase();
-// console.log(lans3)
-// if (lans3 === "n") {
-//     console.log("Visitor is correct")
-//     alert("That is Correct...sadly...");
-//     points++
-// } else if (lans3 ==="y") {
-//     console.log("Visitor is incorrect")
-//     alert("I wish...");
-// } else {
-//     console.log("Visitor is incorrect")
-//     alert("Invalid Answer Detected!");
-// }
-
-// //question 4
-// var ans4 = prompt("Is my favorite novel genre fantasy/sci-fi?");
-// console.log(ans4);
-// var lans4 = ans4.toLowerCase();
-// console.log(lans4)
-// if (lans4 === "y") {
-//     console.log("Visitor is correct")
-//     alert("That is Correct! Maud'dib is pleased");
-//     points++
-// } else if (lans4 ==="n") {
-//     console.log("Visitor is incorrect")
-//     alert("Nope! Gandalf is not happy");
-// } else {
-//     console.log("Visitor is incorrect")
-//     alert("Invalid Answer Detected! Sauron is laughing!");
-// }
-
-// // question 5
-// var ans5 = prompt("Do I have a complete pair of lungs");
-// console.log(ans5);
-// var lans5 = ans5.toLowerCase();
-// console.log(lans5)
-// if (lans5 === "n") {
-//     console.log("Visitor is correct")
-//     alert("That is Correct! ...don't ask");
-//     points++
-// } else if (lans5 ==="y") {
-//     console.log("Visitor is incorrect")
-//     alert("Nope! if only...");
-// } else {
-//     console.log("Visitor is incorrect")
-//     alert("What?");
-// }
-// console.log(points);
-
-var response 
-if (points === 5) {
-    response = " Congrats!"
-} else if (points < 5 && points > 2) {
-    response = " Not too shabby!"
-} else {
-    response = " ouch."
+for(var i = 0; i < 5; i++) {
+    var ans1 = prompt(quizArray[0][i]);
+    console.log(ans1);
+    var lans1 = ans1.toLowerCase();
+    console.log(lans1)
+    if (lans1 === quizArray[1][i]) {
+    console.log("Visitor is correct")
+    alert(quizArray[2][i]);
+    points++
+    } else if (lans1 !== quizArray[1][i]) {
+    alert(quizArray[3][i]);
+    console.log("Visitor is incorrect")
+    } else {
+    alert("Invalid Answer Detected!");
+    console.log("Visitor is incorrect")
 }
-
+}
 //guess the number
-//got help from w3
+//got help from w3 for random integer
 var randomNumber = Math.floor(Math.random() * 11);
 var guess;
-console.log(randomNumber)
+console.log(randomNumber);
 
 for(var count = 0; count < 4; count++) {
  guess = prompt('Guess a number between 0 and 10!');
@@ -137,15 +68,48 @@ for(var count = 0; count < 4; count++) {
             alert('Your Guess was too high, try again!');
         }
         if (count === 3) {
-            alert('Sorry, you ran out of guesses!');
+            alert('Sorry, you ran out of guesses! The correct answer was ' + randomNumber + '.');
         }
     }
      
     
         
-}    
+ }    
+//guessing game with array
+var musicTypes = ['country', 'classical', 'christian'];
+var guess2;
+var musicBool = false;
+for (var count2 = 0; count2 < 6; count2++) {
+    guess2 = prompt('Can you guess one of the genres of music I like?').toLocaleLowerCase();
+    console.log(guess2);
+    for (var y = 0; y < 3; y++) {
+        if (guess2 === musicTypes[y]) {
+            musicBool = true;
+            y = 3;
+            console.log(musicBool);
+        }
+    }
+    if (musicBool === true) {
+        count2 = 6;
+        points++;
+        alert('Good Guess!');
+    } else {
+        alert('nope! try again!');
+    }
+    if (count2 === 5) {
+        alert('Sorry, you ran out of guess. The correct possible answers were classical, country, and christian');
+    }
+}
 console.log(points);
-alert("You got " + points +" point(s)!" + response);
+var response 
+if (points === 7) {
+    response = " Congrats!"
+} else if (points < 7 && points > 3) {
+    response = " Not too shabby!"
+} else {
+    response = " ouch."
+}
+alert("You got " + points +" point(s) out of 7! " + response);
 
 }
 
