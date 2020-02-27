@@ -36,12 +36,10 @@ for(var i = 0; i < 5; i++) {
         if (lans1 === quizArray[1][i]) {
             console.log("Visitor is correct")
             alert(quizArray[2][i]);
-            quizBool = true;
             points++
         } else if (lans1 === quizArray[4][i]) {
             alert(quizArray[3][i]);
             console.log("Visitor is incorrect")
-            quizBool = true;
         } else {
             alert("Invalid Answer Detected!");
             console.log("Visitor is incorrect");
