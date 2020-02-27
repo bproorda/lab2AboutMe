@@ -29,7 +29,7 @@ ul a {
 }
 
 nav ul li {
-    display: inline;
+    /* display: inline; */
     float: right;
     position: relative;
     top: -10px;
@@ -71,6 +71,7 @@ aside {
     top: -550px;
     padding: 20px;
     z-index: 1;
+    margin-top: 70px;
 }
 aside li {
     margin: 0 auto;
@@ -78,9 +79,6 @@ aside li {
 aside h2 {
     font-weight: bolder;
     font-size: 20px;
-}
-#recent {
-    text-decoration: underline;
 }
 table {
      /* padding: 20px; */
@@ -103,6 +101,7 @@ ol {
     vertical-align: center;
     /* position: relative;
     top: -55px; */
+    list-style: lower-latin;
     margin: 0 auto 60px auto;
     width: 90%;
 }
