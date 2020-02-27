@@ -27,10 +27,8 @@ var correctRes = ['That is Correct! Good Job!', 'That is Correct! For now...', '
 var wrongRes = ['Nope! Nice try though.', 'Nope! Though I would not mind a third one...', 'I wish...', 'Nope! Gandalf is not happy', 'Nope! if only...'];
 var wrongAns = ['y', 'n', 'y', 'n', 'y'];
 var quizArray = [quesArray, quizAns, correctRes, wrongRes, wrongAns];
-var quizBool = false;
 
 for(var i = 0; i < 5; i++) {
-    // while (quizBool === false) {
         var ans1 = prompt(quizArray[0][i]);
         console.log(ans1);
         var lans1 = ans1.toLowerCase();
@@ -46,9 +44,9 @@ for(var i = 0; i < 5; i++) {
             quizBool = true;
         } else {
             alert("Invalid Answer Detected!");
-            console.log("Visitor is incorrect")
+            console.log("Visitor is incorrect");
+            i--;
     }
-// }
 }
 //guess the number
 //got help from w3 for random integer
