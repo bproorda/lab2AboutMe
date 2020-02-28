@@ -1,110 +1,123 @@
-header {
-    height: 70px;
-    background-image: linear-gradient(to bottom, blue, white);
-    padding: 10px;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    border-bottom: 3px solid black;
-    z-index: 2;
-}
 body {
-    background-image: url(https://cdn.pixabay.com/photo/2017/11/19/20/45/tree-2963800_960_720.jpg);
+    background-image: url("../img/newsprint-background.jpg");
+    background-size: 100%;
+}
+header {
+    /* display: inline; */
+    text-align: center;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    padding: 30px;
 }
 h1 {
-    font-size: 30px;
+    font-size: 70px;
+    font-family: serial;
     position: relative;
-    bottom: -10px;
-    font-family: cursive;
+    left: -120px;
+    bottom: -5px;
 }
-
-ul a {
+#estd {
+    text-align: center;
+    border-bottom: 3px solid black;
+    padding: 10px;
+    font-family: chenier;
+    font-size: 20px;
+    font-stretch: extra-expanded;
+    letter-spacing: 5px;
+}
+/* https://stackoverflow.com/questions/3245141/using-otf-fonts-on-web-browsers */
+@font-face {
+    font-family: serial;
+    src: url(../fonts/Serialpublicationdemo-qxo1.ttf);
+}
+@font-face {
+    font-family: chenier;
+    src: url("../fonts/ChenierRegular-8rO2.ttf");
+}
+main {
+    font-family: chenier;
+    font-size: 20px;
+}
+nav {
+    float: right;
+    margin: 0 auto;
+    width: 12%;
+    padding: 10px;
+    border-left: 3px solid black;
+    position: relative;
+    right: -220px;
+}
+li {
+    padding: 10px;
+    padding-bottom: 30px;
+}
+li a {
     color: black;
     text-decoration: none;
-    padding: 10px;
-    margin: 5px;
-    background-image: radial-gradient(rgb(124, 185, 206), rgb(7, 7, 80));
-    border-radius: 20px;
-    border: 2px solid black;
-}
-
-nav ul li {
-    /* display: inline; */
-    float: right;
-    position: relative;
-    top: -10px;
 }
 .bio {
-    background-color: gray;
-    border-radius: 20px;
-    border: 2px solid black;
-    padding: 10px;
-    margin: 20px; 
-    width: 75%;
-}
-.bio h2 {
-    font-weight: bolder;
-    font-size: 20px;
-}
-main ul {
-    margin-top: 100px;
-}
-
-
-footer {
-    clear: both;
-    height: 30px;
-    background-image: linear-gradient(to top, blue, white);
-    padding: 10px;
-    position: fixed;
-    bottom: -5px;
-    width: 100%;
-    border-top: 3px solid black;
-}
-aside {
-    background-color: chocolate;
-    float: right;
-    border: 2px solid black;
-    border-radius: 20px;
-    width: 15%;
-    position: relative;
-    top: -550px;
     padding: 20px;
-    z-index: 1;
-    margin-top: 70px;
-}
-aside li {
-    margin: 0 auto;
-}
-aside h2 {
-    font-weight: bolder;
-    font-size: 20px;
-}
-table {
-     /* padding: 20px; */
-    margin-left: 22px; 
-    max-width: 50%;
-}
-
-td {
-    /* padding: 10px; */
-    background-color: antiquewhite;
-    border: 3px solid black;
-    width: 15%;
-}
-.bignbold {
-    font-size: 20px;
-    font-weight: bold;
-    text-decoration: underline;
+    width: 45%;
+    border-right: 3px solid black;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 ol {
-    vertical-align: center;
-    /* position: relative;
-    top: -55px; */
-    list-style: lower-latin;
-    margin: 0 auto 60px auto;
-    width: 90%;
-}
-table ul {
+    list-style: upper-roman;
     margin: 0 auto;
+    padding: 10px;
+}
+#contact {
+    width: 10%;
+}
+#email {
+    font-family: chenier;
+    font-size: 20px;
+    border: 3px solid black;
+    /* display: inline-block; */
+    float: right;
+    padding: 10px;
+    position: relative;
+    top: -73px;
+}
+#byline {
+    font-family: chenier;
+    font-size: 20px;
+    border: 3px solid black;
+    /* display: inline-block; */
+    float: left;
+    padding: 20px;
+    position: relative;
+    top: -4px;
+}
+a:hover {
+    font-size: 25px;
+}
+nav li:hover {
+    border: 3px solid black;
+}
+.bignbold {
+    font-size: 25px;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+#pic {
+    font-family: chenier;
+    text-align: center;
+    position: relative;
+    left: 250px;
+    bottom: 350px;   
+}
+
+#history, #movie {
+    float: left;
+    /* position: relative;
+    bottom: 250px; */
+    margin: 30px;
+    border-right: 3px solid black;
+}
+#extras {
+    border-top: 3px solid black;
+    position: relative;
+    bottom: 250px;
 }
