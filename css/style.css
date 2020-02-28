@@ -96,8 +96,8 @@ nav li a {
     color: black;
     text-decoration: none;
 }
-nav li a:hover {
-    font-size: 25px;
+/* nav li a:hover {
+    font-size: 25px; */
 }
 div {
     /* border-bottom: 3px solid black; */
