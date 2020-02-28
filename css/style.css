@@ -3,18 +3,39 @@ body {
     background-size: 100%;
 }
 header {
-    /* display: inline; */
     text-align: center;
     border-top: 3px solid black;
     border-bottom: 3px solid black;
-    padding: 30px;
+    height: 100px;
 }
 h1 {
-    font-size: 70px;
+    font-size: 60px;
     font-family: serial;
-    position: relative;
-    left: -120px;
-    bottom: -5px;
+    width: 50%;
+    margin-top: 20px;
+    vertical-align: middle;
+    
+}
+h1, #byline, #email, #bio, #pic, nav, #movie, #history {
+    display: inline-block;
+}
+#byline {
+    width: 200px;
+    border: 3px solid black;
+    height: 30%;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+    
+}
+#email {
+    width: 200px;
+    border: 3px solid black;
+    height: 70px;
+    padding: 5px;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0 auto;
 }
 #estd {
     text-align: center;
@@ -34,90 +55,74 @@ h1 {
     font-family: chenier;
     src: url("../fonts/ChenierRegular-8rO2.ttf");
 }
-main {
+body {
     font-family: chenier;
     font-size: 20px;
 }
+#bio {
+    width: 43%;
+    height: 90%;
+    margin: auto 7% 50px 10px;
+    border-right: 3px solid black;
+}
+#pic {
+    width: 19%;
+    text-align: center;
+    margin-right: 7%;
+    margin-top: 20px;
+}
+img {
+    width: 100%;
+    border: 3px solid black;
+}
 nav {
-    float: right;
-    margin: 0 auto;
-    width: 12%;
-    padding: 10px;
+    width: 15%;
+    margin: 0 0 0 0;
     border-left: 3px solid black;
+    height: 80%;
     position: relative;
-    right: -220px;
-}
-li {
+    top: -150px;
     padding: 10px;
-    padding-bottom: 30px;
 }
-li a {
+nav h2 {
+    margin-bottom: 15px;
+    margin-left: 20px;
+}
+nav li {
+    margin-bottom: 25px;
+    margin-left: 20px;
+}
+nav li a {
     color: black;
     text-decoration: none;
 }
-.bio {
-    padding: 20px;
-    width: 45%;
-    border-right: 3px solid black;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-ol {
-    list-style: upper-roman;
-    margin: 0 auto;
-    padding: 10px;
-}
-#contact {
-    width: 10%;
-}
-#email {
-    font-family: chenier;
-    font-size: 20px;
-    border: 3px solid black;
-    /* display: inline-block; */
-    float: right;
-    padding: 10px;
-    position: relative;
-    top: -73px;
-}
-#byline {
-    font-family: chenier;
-    font-size: 20px;
-    border: 3px solid black;
-    /* display: inline-block; */
-    float: left;
-    padding: 20px;
-    position: relative;
-    top: -4px;
-}
-a:hover {
+nav li a:hover {
     font-size: 25px;
 }
-nav li:hover {
-    border: 3px solid black;
-}
-.bignbold {
-    font-size: 25px;
-    font-weight: bolder;
-    text-decoration: underline;
-}
-#pic {
-    font-family: chenier;
-    text-align: center;
-    position: relative;
-    left: 250px;
-    bottom: 350px;   
-}
-
-#history, #movie {
-    float: left;
-    /* position: relative;
-    bottom: 250px; */
-    margin: 30px;
-    border-right: 3px solid black;
+div {
+    /* border-bottom: 3px solid black; */
+    width: 100%;
+    height: 480px;
+    margin-bottom: 20px;
 }
 #extras {
     border-top: 3px solid black;
-    position: relative;
-    bottom: 250px;
+}
+.bignbold {
+    text-decoration: underline;
+    font-size: 25px;
+    font-weight: bolder;
+}
+#movie {
+    margin: 30px 60px 30px 30px;
+    border-right: 3px solid black;
+    padding: 20px;
+}
+#movie ol {
+    list-style: lower-roman;
+}
+
+#history {
+    border-right: 3px solid black;
+    padding: 20px;
 }
