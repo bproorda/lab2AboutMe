@@ -1,110 +1,134 @@
-header {
-    height: 70px;
-    background-image: linear-gradient(to bottom, blue, white);
-    padding: 10px;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    border-bottom: 3px solid black;
-    z-index: 2;
-}
 body {
-    background-image: url(https://cdn.pixabay.com/photo/2017/11/19/20/45/tree-2963800_960_720.jpg);
+    background-image: url("../img/newsprint-background.jpg");
+    background-size: 100%;
+}
+header {
+    text-align: center;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    height: 100px;
 }
 h1 {
-    font-size: 30px;
-    position: relative;
-    bottom: -10px;
-    font-family: cursive;
+    font-size: 60px;
+    font-family: serial;
+    width: 50%;
+    margin-top: 20px;
+    vertical-align: middle;
+    
 }
-
-ul a {
+h1, #byline, #email, #bio, #pic, nav, #movie, #history {
+    display: inline-block;
+}
+#byline {
+    width: 200px;
+    border: 3px solid black;
+    height: 30%;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+    
+}
+#email {
+    width: 200px;
+    border: 3px solid black;
+    height: 70px;
+    padding: 5px;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0 auto;
+}
+#estd {
+    text-align: center;
+    border-bottom: 3px solid black;
+    padding: 10px;
+    font-family: chenier;
+    font-size: 20px;
+    font-stretch: extra-expanded;
+    letter-spacing: 5px;
+}
+/* https://stackoverflow.com/questions/3245141/using-otf-fonts-on-web-browsers */
+@font-face {
+    font-family: serial;
+    src: url(../fonts/Serialpublicationdemo-qxo1.ttf);
+}
+@font-face {
+    font-family: chenier;
+    src: url("../fonts/ChenierRegular-8rO2.ttf");
+}
+body {
+    font-family: chenier;
+    font-size: 20px;
+}
+#bio {
+    width: 43%;
+    height: 90%;
+    margin: auto 7% 50px 10px;
+    border-right: 3px solid black;
+}
+#pic {
+    width: 19%;
+    text-align: center;
+    margin-right: 7%;
+    margin-top: 20px;
+}
+img {
+    width: 100%;
+    border: 3px solid black;
+}
+nav {
+    width: 15%;
+    margin: 0 0 0 0;
+    border-left: 3px solid black;
+    height: 80%;
+    position: relative;
+    top: -150px;
+    padding: 10px;
+}
+nav h2 {
+    margin-bottom: 15px;
+    margin-left: 20px;
+}
+nav li {
+    margin-bottom: 25px;
+    margin-left: 20px;
+}
+nav li a {
     color: black;
     text-decoration: none;
-    padding: 10px;
-    margin: 5px;
-    background-image: radial-gradient(rgb(124, 185, 206), rgb(7, 7, 80));
-    border-radius: 20px;
-    border: 2px solid black;
 }
-
-nav ul li {
-    /* display: inline; */
-    float: right;
-    position: relative;
-    top: -10px;
+nav li a:hover {
+    text-decoration: underline;
+    color: blue;
 }
-.bio {
-    background-color: gray;
-    border-radius: 20px;
-    border: 2px solid black;
-    padding: 10px;
-    margin: 20px; 
-    width: 75%;
-}
-.bio h2 {
-    font-weight: bolder;
-    font-size: 20px;
-}
-main ul {
-    margin-top: 100px;
-}
-
-
-footer {
-    clear: both;
-    height: 30px;
-    background-image: linear-gradient(to top, blue, white);
-    padding: 10px;
-    position: fixed;
-    bottom: -5px;
+div {
     width: 100%;
+    height: 480px;
+    margin-bottom: 20px;
+}
+#extras {
     border-top: 3px solid black;
 }
-aside {
-    background-color: chocolate;
-    float: right;
-    border: 2px solid black;
-    border-radius: 20px;
-    width: 15%;
-    position: relative;
-    top: -550px;
-    padding: 20px;
-    z-index: 1;
-    margin-top: 70px;
-}
-aside li {
-    margin: 0 auto;
-}
-aside h2 {
+.bignbold {
+    text-decoration: underline;
+    font-size: 25px;
     font-weight: bolder;
-    font-size: 20px;
 }
-table {
-     /* padding: 20px; */
-    margin-left: 22px; 
-    max-width: 50%;
+#movie {
+    margin: 30px 60px 30px 30px;
+    border-right: 3px solid black;
+    padding: 20px;
+}
+#movie ol {
+    list-style: lower-roman;
 }
 
-td {
-    /* padding: 10px; */
-    background-color: antiquewhite;
-    border: 3px solid black;
-    width: 15%;
+#history {
+    border-right: 3px solid black;
+    padding: 20px;
 }
-.bignbold {
-    font-size: 20px;
-    font-weight: bold;
-    text-decoration: underline;
-}
-ol {
-    vertical-align: center;
-    /* position: relative;
-    top: -55px; */
-    list-style: lower-latin;
-    margin: 0 auto 60px auto;
-    width: 90%;
-}
-table ul {
-    margin: 0 auto;
+#picB {
+    width: 300px;
+    display: inline-block;
+    margin-top: 50px;
+    margin-left: 50px;
 }
