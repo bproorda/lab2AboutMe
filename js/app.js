@@ -113,5 +113,5 @@ alert("You got " + points +" point(s) out of 7! " + response);
 
 }
 
-// Quiz();
+
 
